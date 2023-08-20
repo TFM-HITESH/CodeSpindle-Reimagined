@@ -1,21 +1,21 @@
 import React from 'react';
-import Navbar from '@/Components/Navbar';
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Navbar from '@/Components/Navbar';
 
-type javaProps = {
+type HomeProps = {
     
 };
 
-const java:React.FC<javaProps> = () => {
+const Home:React.FC<HomeProps> = () => {
     
     return (
         <div>
           <Navbar />
-          <h1>Java</h1>
+          <h1>Home Page</h1>
           {/* Other content */}
         </div>
       );
 }
-export default java;
+export default Home;

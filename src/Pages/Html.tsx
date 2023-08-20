@@ -4,18 +4,19 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-type javaProps = {
+
+type htmlProps = {
     
 };
 
-const java:React.FC<javaProps> = () => {
+const html:React.FC<htmlProps> = () => {
     
     return (
         <div>
           <Navbar />
-          <h1>Java</h1>
+          <h1>HTML</h1>
           {/* Other content */}
         </div>
       );
 }
-export default java;
+export default html;
