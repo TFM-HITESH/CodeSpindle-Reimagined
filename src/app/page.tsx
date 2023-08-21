@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-
-      <div className="bg-cyan-500">Hey world !</div>
+      
+      <div className="bg-cyan-500"></div>
     </div>
   )
 }     

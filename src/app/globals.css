@@ -136,10 +136,28 @@ body {
 }
 
 .animate-glow-opacity {
-  transition-duration: 350ms;
+  transition-duration: 300ms;
 }
 
 .animate-glow-opacity:hover {
   animation: glowing-opacity 10s infinite;
-  transition-duration: 350ms;
+  transition-duration: 300ms;
 }
+
+/* styles/glassmorphism.css */
+.glass-button {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+

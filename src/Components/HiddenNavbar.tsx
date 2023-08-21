@@ -14,8 +14,31 @@ const Navbar: React.FC<NavbarProps> = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const [cursorPosY, setCursorPosY] = useState<number>(0);
+    const [isVisible, setIsVisible] = useState<boolean>(true);
+
+    const handleMouseMove = (e: MouseEvent) => {
+        setCursorPosY(e.clientY);
+    };
+
+    useEffect(() => {
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+        };
+    }, []);
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+          setIsVisible(cursorPosY < window.innerHeight/1.75);
+        }, 50); // Adjust the delay time in milliseconds (e.g., 300ms)
+    
+        return () => clearTimeout(timeoutId);
+      }, [cursorPosY]);
+
+
     return (
-        <nav className="w-full bg-gray-900">
+        <nav className={`fixed top-[-10.3%] w-full bg-gray-900 ${isVisible ? 'translate-y-full' : 'translate-y-2'}`} style={{ transition: 'transform 0.55s' }}>
             <div className="flex items-center justify-between px-4 py-3 md:px-8 ">
 
                 <div className={`text-white text-xl font-bold ${isMenuOpen ? 'hidden' : 'block'} md:block`}>
