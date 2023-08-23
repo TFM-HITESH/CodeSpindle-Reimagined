@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     };
 
     return (
-        <nav className="w-full bg-gray-900">
+        <nav className="w-full bg-gradient-to-r from-gray-900 from-15% via-cyan-950 via-40% to-[#181634] to-90% ...">
             <div className="flex items-center justify-between px-4 py-3 md:px-8 ">
 
                 <div className={`text-white text-xl font-bold ${isMenuOpen ? 'hidden' : 'block'} md:block`}>
@@ -111,7 +111,8 @@ const Navbar: React.FC<NavbarProps> = () => {
                     </button>
                 </div>
             </div>
-            <div className="w-[100%] h-2 bg-cyan-500"></div>
+            <div className="w-[100%] h-0.5 opacity-40 bg-slate-300"></div>
+            {/*<div className="w-[100%] h-2 bg-cyan-500"></div>*/}
         </nav>
     );
 }

@@ -30,15 +30,16 @@ const Navbar: React.FC<NavbarProps> = () => {
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
-          setIsVisible(cursorPosY < window.innerHeight/1.75);
-        }, 50); // Adjust the delay time in milliseconds (e.g., 300ms)
+          setIsVisible(cursorPosY < window.innerHeight/1.75);  //change the 1.75 to change where on the screen past where the navbar is hidden or seen
+        }, 30); // Adjust the delay time in milliseconds (e.g., 300ms)
     
         return () => clearTimeout(timeoutId);
       }, [cursorPosY]);
 
 
     return (
-        <nav className={`fixed top-[-10.3%] w-full bg-gray-900 ${isVisible ? 'translate-y-full' : 'translate-y-2'}`} style={{ transition: 'transform 0.55s' }}>
+        //w-full bg-gray-900 : old Design
+        <nav className={`fixed top-[-9.5%] w-full bg-gray-900 ${isVisible ? 'translate-y-full' : 'translate-y-0'}`} style={{ transition: 'transform 0.70s' }}>
             <div className="flex items-center justify-between px-4 py-3 md:px-8 ">
 
                 <div className={`text-white text-xl font-bold ${isMenuOpen ? 'hidden' : 'block'} md:block`}>
