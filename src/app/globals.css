@@ -16,15 +16,21 @@
   }
 }
 
-body {
+ body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  background: linear-gradient(to bottom right, rgb(10, 10, 11), rgb(7, 35, 39), rgb(2, 8, 15), rgb(0, 0, 0));
+  height: 100vh; 
+} 
+
+/* body {
+  background-image: url('/public/next.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+} */
 
 @keyframes glowing-opacity {
   0% {
