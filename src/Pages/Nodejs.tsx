@@ -1,5 +1,6 @@
 import Navbar from '@/Components/Navbar';
 import React from 'react';
+import './globals.css'
 
 type NodejsProps = {
     

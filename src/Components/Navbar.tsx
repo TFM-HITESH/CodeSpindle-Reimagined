@@ -10,9 +10,15 @@ import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { faPhp } from '@fortawesome/free-brands-svg-icons';
 import { faNodeJs } from '@fortawesome/free-brands-svg-icons';
-import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faSpinner, faSquareRss } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFileCode } from '@fortawesome/free-solid-svg-icons';
+
+// npm i --save @fortawesome/fontawesome-svg-core
+// npm install --save @fortawesome/free-solid-svg-icons
+// npm install --save @fortawesome/react-fontawesome
+
+// npm install --save @fortawesome/fontawesome-free
 
 
 type NavbarProps = {
@@ -82,6 +88,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                     </li>
                     <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Jquery">
+                            <FontAwesomeIcon icon={faSquareRss} rotation={180} className='pl-2 w-5 h-5' />
                             JQuery
                         </Link>
                     </li>
