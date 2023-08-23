@@ -1,6 +1,18 @@
 'use client';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+//https://fontawesome.com/v5/docs/web/use-with/react#get-started Fontawesome docs
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJava } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
+import { faPhp } from '@fortawesome/free-brands-svg-icons';
+import { faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFileCode } from '@fortawesome/free-solid-svg-icons';
 
 
 type NavbarProps = {
@@ -32,53 +44,62 @@ const Navbar: React.FC<NavbarProps> = () => {
                         </Link>
                     </div>
 
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Java">
+                            <FontAwesomeIcon icon={faJava} className='pr-2 w-5 h-5' />
                             Java
                         </Link>
                     </li>
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Html">
+                            <FontAwesomeIcon icon={faHtml5} className='pr-2 w-5 h-5' />
                             HTML
                         </Link>
                     </li>
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Html">
+                            <FontAwesomeIcon icon={faCss3Alt} className='pr-2 w-5 h-5' />
                             CSS
                         </Link>
                     </li>
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Html">
+                            <FontAwesomeIcon icon={faSquareJs} className='pr-2 w-5 h-5'/>
                             Javascript
                         </Link>
                     </li>
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Html">
+                            <FontAwesomeIcon icon={faPhp} className='pr-2 w-5 h-5' />
                             PHP
                         </Link>
                     </li>
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Html">
+                            <FontAwesomeIcon icon={faSpinner} className='pr-2 w-5 h-5' />
                             AJAX
                         </Link>
                     </li>
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Html">
                             JQuery
                         </Link>
                     </li>
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Html">
+                            <FontAwesomeIcon icon={faFileCode} className='pr-2 w-5 h-5' />
                             XML
                         </Link>
                     </li>
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Html">
+                            <FontAwesomeIcon icon={faNodeJs} className='pr-2 w-5 h-5' />
                             NodeJS
                         </Link>
                     </li>
-                    <li className="px-8 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    <li className="px-7 py-2 transition duration-300 ease-in-out opacity-50 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                         <Link href="/Html">
+                            <FontAwesomeIcon icon={faEnvelope} className='pr-2 w-5 h-5' />
                             PHP Mail
                         </Link>
                     </li>

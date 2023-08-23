@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-
+    
 
 type NavbarProps = {
 
@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
     return (
         //w-full bg-gray-900 : old Design
-        <nav className={`fixed top-[-9.5%] w-full bg-gray-900 ${isVisible ? 'translate-y-full' : 'translate-y-0'}`} style={{ transition: 'transform 0.70s' }}>
+        <nav className={`fixed w-full top-[-8.5%] bg-gradient-to-r from-gray-900 from-15% via-cyan-950 via-40% to-[#181634] to-90% ... ${isVisible ? 'translate-y-full' : 'translate-y-0'}`} style={{ transition: 'transform 0.70s' }}>
             <div className="flex items-center justify-between px-4 py-3 md:px-8 ">
 
                 <div className={`text-white text-xl font-bold ${isMenuOpen ? 'hidden' : 'block'} md:block`}>
@@ -135,7 +135,8 @@ const Navbar: React.FC<NavbarProps> = () => {
                     </button>
                 </div>
             </div>
-            <div className="w-[100%] h-2 bg-cyan-500"></div>
+            <div className="w-[100%] h-0.5 opacity-40 bg-slate-300"></div>
+            {/* <div className="w-[100%] h-2 bg-cyan-500"></div> */}
         </nav>
     );
 }
