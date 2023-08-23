@@ -14,7 +14,7 @@ const html:React.FC<htmlProps> = () => {
     
     return (
         <div>
-          <HiddenNavbar />
+          <Navbar />
           <h1>HTML</h1>
           {/* Other content */}
         </div>

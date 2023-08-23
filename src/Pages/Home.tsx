@@ -13,7 +13,7 @@ const Home:React.FC<HomeProps> = () => {
     
     return (
         <div>
-          <HiddenNavbar />
+          <Navbar />
           <h1>Home Page</h1>
           {/* Other content */}
         </div>

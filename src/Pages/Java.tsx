@@ -13,7 +13,7 @@ const java:React.FC<javaProps> = () => {
     
     return (
         <div>
-          <HiddenNavbar />
+          <Navbar />
           <h1>Java</h1>
           {/* Other content */}
         </div>
