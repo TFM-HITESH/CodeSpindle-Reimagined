@@ -18,13 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  background: linear-gradient(to bottom right, rgb(10, 10, 11), rgb(7, 35, 39), rgb(2, 8, 15), rgb(0, 0, 0));
+  height: 100vh; 
+} 
 
 @keyframes glowing-opacity {
   0% {

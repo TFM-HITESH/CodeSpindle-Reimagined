@@ -5,9 +5,17 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      
-      <div className="bg-cyan-500"></div>
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        <div>
+          {/* sidebar */}
+        </div>
+        <div>
+          {/* text */}
+        </div>
+      </div>
     </div>
   )
 }     

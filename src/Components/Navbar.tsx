@@ -36,7 +36,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         <nav className="w-[100%] bg-gradient-to-r from-gray-900 from-15% via-cyan-950 via-40% to-[#181634] to-90% ... z-100">
             <div className="flex items-center justify-between px-4 py-3 md:px-8 z-100">
 
-                <div className={`text-white text-xl font-bold ${isMenuOpen ? 'hidden' : 'block'} md:block`}>
+                <div className={` ml-0 px-8 py-2 transition duration-300 ease-in-out opacity-100 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity text-white text-xl font-bold ${isMenuOpen ? 'hidden' : 'block'} md:block`}>
                     <Link href="/">
                         CodeSpindle
                     </Link>
@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <ul className={`md:flex space-x-4 ${isMenuOpen ? 'block' : 'hidden'} md:block md:space-x-5 md:ml-auto`}>
 
                     <div className={`text-white text-xl font-bold ${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
-                        <Link href="/Home">
+                        <Link href="/">
                             CodeSpindle
                         </Link>
                     </div>

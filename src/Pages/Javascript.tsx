@@ -10,12 +10,28 @@ type JavascriptProps = {
 const Javascript:React.FC<JavascriptProps> = () => {
     
     return (
-        <div>
-            <Sidebar />
-            <Navbar />
-            <h1>Javascript</h1>
+        // <div>
+        //     <Sidebar />
+        //     <Navbar />
+        //     <h1>Javascript</h1>
            
-            {/* Other content */}
+        //     {/* Other content */}
+        // </div>
+
+        <div>
+            <div className=''>
+                <Navbar />
+            </div>
+            <div className='flex'>
+                <div className='w-[25%] h-[100vh]'>
+                    {/* sidebar */} 
+                    <Sidebar />
+                </div>
+                <div>
+                    {/* text */}
+                    Test
+                </div>
+            </div>
         </div>
     );
 }
