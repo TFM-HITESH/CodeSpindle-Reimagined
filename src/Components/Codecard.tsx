@@ -21,8 +21,6 @@ const CodeEditorWindow: React.FC<CodeEditorWindowProps> = ({ language, code, the
         font-family= 'Courier New'
         font-size= {'14px'}
         line-height= '1.5'
-        
-        
         // background-color: #fff;
         border-radius= {'10px'}
         // box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);

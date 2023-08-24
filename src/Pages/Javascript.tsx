@@ -5,6 +5,7 @@ import Sidebar from '@/Components/Sidebar';
 import Textcard from '@/Components/Textcard';
 import Codecard from '@/Components/Codecard';
 import Infocard from '@/Components/Infocard';
+import HiddenNavbar from '@/Components/HiddenNavbar';
 
 
 type JavascriptProps = {
@@ -29,7 +30,7 @@ const Javascript: React.FC<JavascriptProps> = () => {
 
         <div>
             <div className=''>
-                <Navbar />
+                <HiddenNavbar />
             </div>
             <div className='flex overflow-y-auto'>
                 <div className='w-[25%] h-[100vh]'>
