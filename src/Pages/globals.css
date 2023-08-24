@@ -18,8 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom right, rgb(10, 10, 11), rgb(7, 35, 39), rgb(2, 8, 15), rgb(0, 0, 0));
-  height: 100vh; 
+  background: linear-gradient(to bottom right, rgb(10, 10, 11), rgb(7, 35, 39), rgb(2, 8, 15), rgb(0, 0, 0)); 
 } 
 
 @keyframes glowing-opacity {
@@ -157,3 +156,35 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
+/* Width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+/* Handle animation */
+@keyframes thumbPulse {
+  0%, 100% {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  animation: thumbPulse 1s infinite;
+}
