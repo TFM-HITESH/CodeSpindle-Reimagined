@@ -7,7 +7,7 @@ type TextcardProps = {
 const Textcard:React.FC<TextcardProps> = ({ content }) => {
     
     return (
-        <div className="border bg-slate-300 opacity-60 shadow-md rounded-lg p-6 m-4 text-black">
+        <div className="border bg-slate-300 opacity-90 shadow-lg rounded-lg p-6 w-[100%] text-black text-xl font-bold mb-4">
           <p>{content}</p>
         </div>
       );  

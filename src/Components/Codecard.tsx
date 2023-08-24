@@ -7,15 +7,16 @@ interface CodeEditorWindowProps {
   language?: string;
   code?: string;
   theme?: string;
+  height: number;
 }
 
-const CodeEditorWindow: React.FC<CodeEditorWindowProps> = ({ language, code, theme,}) =>
+const CodeEditorWindow: React.FC<CodeEditorWindowProps> = ({ language, code, theme, height }) =>
   {
 
   return (
-    <div className="mb-10"> 
+    <div className=""> 
       <Editor
-        height='30vh'
+        height={height}
         width={`100%`}
         font-family= 'Courier New'
         font-size= {'14px'}

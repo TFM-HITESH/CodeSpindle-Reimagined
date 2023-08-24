@@ -8,7 +8,7 @@ type SidebarProps = {
 const Sidebar: React.FC<SidebarProps> = () => {
 
     return (
-        <div className="bg-gradient-to-b from-indigo-800 from-10% via-sky-800 via-30% to-transparent to-100% ... text-white h-[100%] w-[100%] overflow-y-auto grid grid-rows-auto gap-0 z-0">
+        <div className="bg-gradient-to-b from-indigo-900 from-10% via-sky-800 via-30% to-transparent to-100% ... text-white h-[100%] w-[100%] overflow-y-auto grid grid-rows-auto gap-0 z-0">
             <ul className={"md:flex-auto px-4 z-0 bg-"}>
                 <li className="px-7 py-2 mb-3 mt-3 transition duration-300 ease-in-out opacity-80 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
                     <Link href="/Java">
@@ -80,31 +80,20 @@ const Sidebar: React.FC<SidebarProps> = () => {
                         Array of Objects
                     </Link>
                 </li>
-                <li className="px-7 py-2 mb-3 mt-3 transition duration-300 ease-in-out opacity-80 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
-                    <Link href="/Java">
-                        Java
-                    </Link>
-                </li>
-                <li className="px-7 py-2 mb-3 mt-3 transition duration-300 ease-in-out opacity-80 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
-                    <Link href="/Java">
-                        Java
-                    </Link>
-                </li>
-                <li className="px-7 py-2 mb-3 mt-3 transition duration-300 ease-in-out opacity-80 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
-                    <Link href="/Java">
-                        Java
-                    </Link>
-                </li>
-                <li className="px-7 py-2 mb-3 mt-3 transition duration-300 ease-in-out opacity-80 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
-                    <Link href="/Java">
-                        Java
-                    </Link>
-                </li>
 
-                
+
+
             </ul>
+            <div className='md:flex-auto px-4 z-0'>
+                <button className="text-left px-7 py-2 w-[100%] mb-3 mt-3 transition duration-300 ease-in-out opacity-80 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    Click me!
+                </button>
+                <button className="text-left px-7 py-2 w-[100%] mb-3 mt-3 transition duration-300 ease-in-out opacity-80 transform hover:bg-stone-300 hover:text-black hover:shadow-lg hover:scale-105 rounded-md hover:opacity-100 animate-glow-opacity">
+                    Click me!
+                </button>
+            </div>
         </div>
-        
+
     );
 }
 export default Sidebar;
